@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reservations>
+  <reservation><id>R001</id><passagerId>P001</passagerId><trajetId>T001</trajetId><place>1</place><dateReservation>2026-08-25</dateReservation><prix>2500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R002</id><passagerId>P002</passagerId><trajetId>T001</trajetId><place>2</place><dateReservation>2026-08-26</dateReservation><prix>2500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R003</id><passagerId>P003</passagerId><trajetId>T001</trajetId><place>3</place><dateReservation>2026-08-27</dateReservation><prix>2500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R004</id><passagerId>P004</passagerId><trajetId>T002</trajetId><place>1</place><dateReservation>2026-08-25</dateReservation><prix>3500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R005</id><passagerId>P005</passagerId><trajetId>T002</trajetId><place>2</place><dateReservation>2026-08-26</dateReservation><prix>3500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R006</id><passagerId>P006</passagerId><trajetId>T002</trajetId><place>3</place><dateReservation>2026-08-27</dateReservation><prix>3500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R007</id><passagerId>P007</passagerId><trajetId>T003</trajetId><place>1</place><dateReservation>2026-08-25</dateReservation><prix>4000</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R008</id><passagerId>P008</passagerId><trajetId>T003</trajetId><place>2</place><dateReservation>2026-08-26</dateReservation><prix>4000</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R009</id><passagerId>P009</passagerId><trajetId>T003</trajetId><place>3</place><dateReservation>2026-08-27</dateReservation><prix>4000</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R010</id><passagerId>P010</passagerId><trajetId>T004</trajetId><place>1</place><dateReservation>2026-08-25</dateReservation><prix>7500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R011</id><passagerId>P001</passagerId><trajetId>T004</trajetId><place>2</place><dateReservation>2026-08-26</dateReservation><prix>7500</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R012</id><passagerId>P002</passagerId><trajetId>T004</trajetId><place>3</place><dateReservation>2026-08-27</dateReservation><prix>7500</prix><statut>Annulee</statut></reservation>
+  <reservation><id>R013</id><passagerId>P003</passagerId><trajetId>T004</trajetId><place>4</place><dateReservation>2026-08-28</dateReservation><prix>7500</prix><statut>Annulee</statut></reservation>
+  <reservation><id>R014</id><passagerId>P004</passagerId><trajetId>T005</trajetId><place>1</place><dateReservation>2026-08-26</dateReservation><prix>5000</prix><statut>Confirmee</statut></reservation>
+  <reservation><id>R015</id><passagerId>P005</passagerId><trajetId>T005</trajetId><place>2</place><dateReservation>2026-08-27</dateReservation><prix>5000</prix><statut>Confirmee</statut></reservation>
+</reservations>

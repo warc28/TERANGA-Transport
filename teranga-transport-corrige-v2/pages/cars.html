@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teranga Transport | Cars</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="../index.html"><img src="../images/logo-teranga-transport.jpeg" alt="Logo Teranga Transport"><span>Teranga Transport</span></a>
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="../index.html">Accueil</a><a href="cars.html">Cars</a><a href="trajets.html">Trajets</a><a href="passagers.html">Passagers</a><a href="reservations.html">Réservations</a><a href="statistiques.html">Statistiques</a>
+    <button id="resetData" class="nav-reset" type="button" title="Recharger les données XML">Réinitialiser XML</button></nav>
+  </div>
+</header>
+
+<section class="page-hero"><div class="container"><h1>Gestion des Cars</h1><p>Consultez et gérez la flotte de Teranga Transport.</p></div></section>
+
+<main class="section">
+  <div class="container two-col">
+    <section class="panel">
+      <h2>Ajouter / modifier un car</h2>
+      <p id="carMessage" class="success-message"></p>
+      <form id="carForm" novalidate>
+        <div class="form-grid">
+          <div class="form-group"><label for="carId">ID du car</label><input id="carId" required placeholder="C005"></div>
+          <div class="form-group"><label for="carMarque">Marque</label><input id="carMarque" required placeholder="Mercedes"></div>
+          <div class="form-group"><label for="carModele">Modèle</label><input id="carModele" required placeholder="Sprinter"></div>
+          <div class="form-group"><label for="carPlaces">Places totales</label><input id="carPlaces" type="number" min="20" max="50" required placeholder="40"></div>
+          <div class="form-group full"><label for="carEtat">État</label><select id="carEtat" required><option value="">Sélectionner</option><option>Disponible</option><option>En révision</option><option>Hors service</option></select></div>
+          <div class="form-group full form-actions">
+            <button id="carSubmit" class="btn btn-primary" type="submit">Ajouter le car</button>
+            <button id="carCancel" class="btn btn-outline hidden" type="button">Annuler</button>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <section class="panel">
+      <div class="toolbar"><h2>Liste des cars</h2><span class="badge badge-blue">XML → JavaScript</span></div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>ID</th><th>Marque</th><th>Modèle</th><th>Places</th><th>État</th><th>Actions</th></tr></thead>
+          <tbody id="carsBody"><tr><td colspan="6" class="empty">Chargement...</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer"><div class="footer-bottom">© 2026 Teranga Transport — Groupe 4 Web</div></footer>
+<script src="../js/utils.js"></script>
+<script src="../js/cars.js"></script>
+</body>
+</html>
