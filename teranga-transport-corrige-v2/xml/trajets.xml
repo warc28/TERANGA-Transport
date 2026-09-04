@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<trajets>
-  <trajet><id>T001</id><villeDepart>Dakar</villeDepart><villeArrivee>Thies</villeArrivee><date>2026-09-01</date><heureDepart>07:30</heureDepart><carId>C001</carId><prix>2500</prix><placesDisponibles>27</placesDisponibles></trajet>
-  <trajet><id>T002</id><villeDepart>Thies</villeDepart><villeArrivee>Saint-Louis</villeArrivee><date>2026-09-02</date><heureDepart>08:00</heureDepart><carId>C002</carId><prix>3500</prix><placesDisponibles>37</placesDisponibles></trajet>
-  <trajet><id>T003</id><villeDepart>Dakar</villeDepart><villeArrivee>Touba</villeArrivee><date>2026-09-03</date><heureDepart>09:00</heureDepart><carId>C003</carId><prix>4000</prix><placesDisponibles>32</placesDisponibles></trajet>
-  <trajet><id>T004</id><villeDepart>Dakar</villeDepart><villeArrivee>Ziguinchor</villeArrivee><date>2026-09-04</date><heureDepart>06:30</heureDepart><carId>C004</carId><prix>7500</prix><placesDisponibles>48</placesDisponibles></trajet>
-  <trajet><id>T005</id><villeDepart>Thies</villeDepart><villeArrivee>Tambacounda</villeArrivee><date>2026-09-05</date><heureDepart>07:00</heureDepart><carId>C001</carId><prix>5000</prix><placesDisponibles>28</placesDisponibles></trajet>
-</trajets>
