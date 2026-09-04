@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+  <car><id>C001</id><marque>Mercedes</marque><modele>Sprinter</modele><placesTotal>30</placesTotal><etat>Disponible</etat></car>
+  <car><id>C002</id><marque>Toyota</marque><modele>Hiace</modele><placesTotal>40</placesTotal><etat>Disponible</etat></car>
+  <car><id>C003</id><marque>Iveco</marque><modele>Daily</modele><placesTotal>35</placesTotal><etat>Disponible</etat></car>
+  <car><id>C004</id><marque>Scania</marque><modele>Tourismo</modele><placesTotal>50</placesTotal><etat>En revision</etat></car>
+</cars>

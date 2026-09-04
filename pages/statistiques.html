@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teranga Transport | Statistiques</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="../index.html"><img src="../images/logo-teranga-transport.jpeg" alt="Logo Teranga Transport"><span>Teranga Transport</span></a>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+  <nav class="main-nav" aria-label="Navigation principale"><a href="../index.html">Accueil</a><a href="cars.html">Cars</a><a href="trajets.html">Trajets</a><a href="passagers.html">Passagers</a><a href="reservations.html">Réservations</a><a href="statistiques.html">Statistiques</a><button id="resetData" class="nav-reset" type="button" title="Recharger les données XML">Réinitialiser XML</button></nav>
+</div></header>
+
+<section class="page-hero"><div class="container"><h1>Tableau de Bord — Statistiques</h1><p>Vue synthétique des cars, trajets, passagers, réservations et revenus.</p></div></section>
+
+<main class="section"><div class="container">
+  <p id="statsErreur" class="error"></p>
+  <section class="stat-cards">
+    <article class="stat-card"><span class="label">Total Cars</span><strong id="totalCars" class="value">—</strong></article>
+    <article class="stat-card"><span class="label">Total Trajets</span><strong id="totalTrajets" class="value">—</strong></article>
+    <article class="stat-card"><span class="label">Total Passagers</span><strong id="totalPassagers" class="value">—</strong></article>
+    <article class="stat-card"><span class="label">Total Réservations</span><strong id="totalReservations" class="value">—</strong></article>
+  </section>
+
+  <section class="panel">
+    <h2>Taux de remplissage par car</h2>
+    <p class="text-muted">Calcul : réservations confirmées / capacité totale des trajets du car × 100.</p>
+    <div id="remplissageCars"></div>
+  </section>
+
+  <div class="two-col mt-20">
+    <section class="panel">
+      <h2>Réservations par statut</h2>
+      <div class="stat-cards" style="grid-template-columns:1fr 1fr">
+        <article class="stat-card"><span class="label">Confirmées</span><strong id="reservationsConfirmees" class="value">0</strong></article>
+        <article class="stat-card"><span class="label">Annulées</span><strong id="reservationsAnnulees" class="value">0</strong></article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Revenus mensuels</h2>
+      <div class="table-wrap"><table class="data-table" style="min-width:0"><thead><tr><th>Mois</th><th>Revenu</th></tr></thead><tbody id="revenusMensuelsBody"></tbody></table></div>
+    </section>
+  </div>
+
+  <section class="panel mt-20">
+    <h2>Revenus par trajet</h2>
+    <div class="table-wrap"><table class="data-table">
+      <thead><tr><th>Trajet</th><th>Destination</th><th>Date</th><th>Réservations confirmées</th><th>Revenu</th></tr></thead>
+      <tbody id="revenusTrajetsBody"></tbody>
+    </table></div>
+  </section>
+</div></main>
+
+<footer class="site-footer"><div class="footer-bottom">© 2026 Teranga Transport — Groupe 4 Web</div></footer>
+<script src="../js/utils.js"></script><script src="../js/statistiques.js"></script>
+</body>
+</html>
